@@ -9,6 +9,6 @@
 <body>
     <h1>Welcome! 까까야</h1>
 
-    <a href="/dancer/join">댄서 등록하러 가보자!</a>
+    <a href="/dancer/join">댄서 등록하러 가보자!~~!</a>
 </body>
 </html>
