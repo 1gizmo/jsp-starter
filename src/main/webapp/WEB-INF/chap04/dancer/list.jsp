@@ -20,7 +20,7 @@
 
     <style>
         .del-btn {
-            padding: 10px;
+            padding: 5px 10px;
             outline: none;
             border: none;
             background: red;
@@ -65,12 +65,15 @@
             if (!e.target.matches('button')) return;
 
             // console.log('삭제 버튼 눌렀다!!');
-            // 서버로 삭제 요청을 보내면서 댄서이름을 전달
-           const dnacerName = e.target.previousElmentSibling.textContent;
-           console.log(dnacerName);
 
-           // 서버에 링크로 삭제 요청
-           window.location.href='/dancer/delete?name=' + dnacerName;
+            // 서버로 삭제요청을 보내면서 댄서이름을 전달
+            const dancerName 
+                = e.target.previousElementSibling.textContent;
+            // console.log(dancerName);
+
+            // 서버에 링크로 삭제 요청
+            window.location.href='/dancer/delete?name=' + dancerName;
+
         };
 
 
