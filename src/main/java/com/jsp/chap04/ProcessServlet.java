@@ -30,8 +30,7 @@ public class ProcessServlet extends HttpServlet {
         String crewName = request.getParameter("crewName");
         String danceLevel = request.getParameter("danceLevel");
         String[] genresArray = request.getParameterValues("genres");
-
-
+        
         // Dancer객체를 생성, 입력값 세팅 (business logic : model(자바객체))
         // 데이터베이스에 저장 (business logic : model(자바객체)) -> 위임
         repository.save(name, crewName, danceLevel, genresArray);
